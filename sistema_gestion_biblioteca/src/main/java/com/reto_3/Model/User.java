@@ -1,15 +1,27 @@
 package com.reto_3.Model;
 
+import java.time.LocalDate;
+
 public class User {
 
-    private String name;
     private String id;
-    private String password;    
+    private String name;
+    private String email;
+    private LocalDate registerDate;
 
-    public User(String name, String id, String password) {
-        this.name = name;
+    public User(String id, String name, String email) {
+        this(id, name, email, LocalDate.now());
+    }
+
+    public User(String id, String name, String email, LocalDate registerDate) {
         this.id = id;
-        this.password = password;
+        this.name = name;
+        this.email = email;
+        this.registerDate = registerDate;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getName() {
@@ -20,20 +32,15 @@ public class User {
         this.name = name;
     }
 
-    public String getId() {
-        return id;
+    public String getEmail() {
+        return email;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public LocalDate getRegisterDate() {
+        return registerDate;
     }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    
 }
