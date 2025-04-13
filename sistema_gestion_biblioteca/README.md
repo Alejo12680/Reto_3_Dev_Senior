@@ -23,7 +23,7 @@ src/ <br>
 │   ├── Book.java        
 │   ├── User.java     
 │   ├── Loan.java  
-│   └── LoanState.java 
+│   └── LoanState.java <br>
 ├── service/  <br>
 │   ├── BookService.java        
 │   ├── LoanService.java <br> 
