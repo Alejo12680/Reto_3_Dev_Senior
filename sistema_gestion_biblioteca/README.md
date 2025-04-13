@@ -20,16 +20,14 @@ src/ <br>
 │   ├── NotFoundException.java  <br>
 │  <br>
 ├── model/  <br>
-│   ├── Book.java  <br>       
-│   ├── User.java  <br>     
-│   ├── Loan.java  <br>   
+│   ├── Book.java <br>       
+│   ├── User.java     
+│   ├── Loan.java <br>   
 │   └── LoanState.java  <br>
 ├── service/  <br>
-│   ├── BookService.java  <br>        
-│   ├── LoanService.java  <br>
-│   └── UserService.java  <br>  
-│  <br>
-├── resources/  <br>
+│   ├── BookService.java <br>        
+│   ├── LoanService.java 
+│   └── UserService.java <br>  
 │  <br>
 │  <br>
 └── test/  <br>
