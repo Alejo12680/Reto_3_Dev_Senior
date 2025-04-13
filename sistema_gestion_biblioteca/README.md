@@ -17,16 +17,16 @@ Este proyecto es una aplicación de consola en Java que permite gestionar libros
 src/ <br>
 │  <br>
 ├── exceptiones/  <br>
-│   ├── NotFoundException.java  <br>
+│   └── NotFoundException.java  <br>
 │  <br>
 ├── model/  <br>
 │   ├── Book.java        
 │   ├── User.java     
 │   ├── Loan.java  
-│   └── LoanState.java  <br>
+│   └── LoanState.java 
 ├── service/  <br>
-│   ├── BookService.java <br>        
-│   ├── LoanService.java 
+│   ├── BookService.java        
+│   ├── LoanService.java <br> 
 │   └── UserService.java  
 │  <br>
 │  <br>
