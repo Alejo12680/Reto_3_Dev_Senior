@@ -27,7 +27,7 @@ public class LoanService {
     var user = userService.getUserById(id);
     var book = bookService.getBookByIsbn(isbn);
 
-    for (var loan : loans) {
+    for (var loan : loans) { // Itera sobre cada préstamo en la lista loans
       if (loan.getBook().getIsbn().equals(isbn)
           && loan.getState().equals(LoanState.STARTED)) {
         logger.warning("El libro ya está prestado: " + isbn);

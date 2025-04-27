@@ -1,6 +1,6 @@
 package com.reto_3.Service;
 
-import java.time.LocalDate;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -22,11 +22,7 @@ public class UserService {
     logger.info("Usuario registrado: " + name + " (ID: " + id + ")");
   }
 
-  public void addUser(String id, String name, String email, LocalDate registerDate) {
-    users.add(new User(id, name, email, registerDate));
-    logger.info("Usuario registrado: " + name + " (ID: " + id + ")" + " con fecha de registro: " + registerDate);
-  }
-
+  
   public List<User> getAllUsers() {
     logger.fine("Obteniendo todos los usuarios.");
     return users;
@@ -44,15 +40,6 @@ public class UserService {
     throw new NotFoundException("No existe un usaurio con el id: " + id);
   }
 
-  public void updateUserEmail(String id, String email) throws NotFoundException {
-    var user = getUserById(id);
-    user.setEmail(email);
-  }
-
-  public void updateUserName(String id, String name) throws NotFoundException {
-    var user = getUserById(id);
-    user.setName(name);
-  }
 
   public void deleteUser(String id) throws NotFoundException {
     var user = getUserById(id);
