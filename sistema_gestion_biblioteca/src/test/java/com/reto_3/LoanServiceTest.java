@@ -4,6 +4,7 @@ package com.reto_3;
 import com.reto_3.Service.*;
 import com.reto_3.Exeptions.NotFoundException;
 import org.junit.jupiter.api.*;
+import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,8 +16,8 @@ public class LoanServiceTest {
 
     @BeforeEach
     public void setUp() {
-        bookService = new BookService();
-        userService = new UserService();
+        bookService = Mockito.mock(BookService.class);
+        userService = Mockito.mock(UserService.class);
         loanService = new LoanService(bookService, userService);
 
         bookService.addBook("ISBN1", "Clean Code", "Robert C. Martin");
